@@ -1,6 +1,6 @@
 # personal-skills
 
-Agent skills I use with [Claude Code](https://claude.com/claude-code).
+Agent skills I use with [Claude](https://claude.com/claude).
 
 Each directory is a self-contained skill: a `SKILL.md` the agent loads, plus a `README.md` for humans browsing here.
 
