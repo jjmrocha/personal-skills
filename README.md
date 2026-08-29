@@ -9,7 +9,6 @@ Each directory is a self-contained skill: a `SKILL.md` the agent loads, plus a `
 | Skill | Use it when |
 |-------|-------------|
 | [applying-terseness](applying-terseness/) | Text is wordy — trim filler, cut redundancy, collapse prose into tables. Rewrites or audits without rewriting. |
-| [company-research](company-research/) | You need to understand a company — one you don't know, or one you know and suspect you're missing something about. Evidence only, never a verdict. |
 | [grill-me](grill-me/) | You want the agent to understand *why* you think something before it acts. It interviews you, one question at a time. |
 | [removing-ai-tells](removing-ai-tells/) | Text reads as machine-generated — fixes the stance and rhythm that give it away, not just the vocabulary. |
 | [socratic-mentor](socratic-mentor/) | You're learning a concept — explained first, then questioned, calibrated to what you already know. |
@@ -23,7 +22,6 @@ git clone https://github.com/jjmrocha/personal-skills.git ~/SOURCES/personal-ski
 
 mkdir -p ~/.claude/skills
 ln -s ~/SOURCES/personal-skills/applying-terseness ~/.claude/skills/
-ln -s ~/SOURCES/personal-skills/company-research   ~/.claude/skills/
 ln -s ~/SOURCES/personal-skills/grill-me           ~/.claude/skills/
 ln -s ~/SOURCES/personal-skills/removing-ai-tells  ~/.claude/skills/
 ln -s ~/SOURCES/personal-skills/socratic-mentor    ~/.claude/skills/
@@ -43,7 +41,7 @@ Project-scoped instead of personal: put them in `.claude/skills/` inside the rep
 
 ## Using them
 
-Skills load automatically when the agent judges the description to match what you're doing. You can also invoke one by name — `/applying-terseness`, `/company-research`, `/grill-me`, `/removing-ai-tells`, `/socratic-mentor`.
+Skills load automatically when the agent judges the description to match what you're doing. You can also invoke one by name — `/applying-terseness`, `/grill-me`, `/removing-ai-tells`, `/socratic-mentor`.
 
 ## License
 
